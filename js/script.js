@@ -1,3 +1,13 @@
+const btn = document.getElementById("menu-btn");
+btn.addEventListener("click", navToggle);
+
+// Toggle Mobile Menu
+function navToggle() {
+  btn.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+}
+
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Get form element
